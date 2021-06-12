@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="dist/css/main.css">
+  <!-- Fontawesom CSS -->
+  <link rel="stylesheet" href="dist/font-awesome/css/font-awesome.min.css">
+  <title>Music Player</title>
+</head>
+<body>
+ <div class="music">
+   <div class="music-container">
+     <div class="music-heading"><h2>Music Player</h2></div>
+     <div class="music-player">
+      <div class="music-player__top-bar">
+        <i class="fa fa-chevron-left back"></i>
+        <h3 class="tob-bar__title">Playing Now</h3>
+        <i class="fa fa-heart fav"></i>
+      </div><!-- /Top Bar -->
+      <div class="music-player__album-cover">
+        <div class="back-float"></div>
+        <div class="image-container">
+          <img id="music_cover" src="./assets/cover_arts/music1.jpg" alt="">
+        </div>
+      </div><!-- /album-cover -->
+      <div class="music-player__controller">
+        <h2 class="title" id="music_title">We no dey <span id="music_author">Lisa lisa</span></h2>
+        <div class="controls">
+          <div class="small-icon" id='prev'>
+            <i class="fa fa-backward"></i>
+          </div>
+          <div class="big-icon" id="play">
+            <i class="fa fa-play"></i>
+          </div>
+          <div class="small-icon" id='next'>
+            <i class="fa fa-forward"></i>
+          </div>
+        </div><!-- /Controls -->
+        <div class="progress">
+          <div class="progress-bar" id="progress_bar"></div>
+        </div>
+        <audio src="./assets/musics/music1.mp3" id="audio"></audio>
+      </div>
+      <div class="music-player__footer">
+          <ul class="accounts">
+            <li class="accounts-item"><i class="fa fa-facebook"></i></li>
+            <li class="accounts-item"><i class="fa fa-twitter"></i></li>
+            <li class="accounts-item"><i class="fa fa-github"></i></li>
+          </ul>
+      </div>
+      <div class="playlist" id="playlist">
+        <div class="playlist-toggler" id="playlist-toggler">
+          <i class="fa fa-chevron-up active"></i>
+        </div>
+        <ul class="playlist-list" id="playlist_list">
+
+        </ul>
+      </div>
+     </div>
+   </div>
+ </div>
+ <script src="./dist/js/app.js"></script>
+</body>
+</html>
